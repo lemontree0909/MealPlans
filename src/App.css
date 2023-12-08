@@ -1,38 +1,142 @@
+body {
+  background: url(food.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #325c71;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #dcedf7;
+  border-radius: 20px;
+  padding: 15px;
+}
+.button-add {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #77cf40;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 17px;
+}
+
+.button-delete {
+  font-family: 'Montserrat', sans-serif;
+  background: none;
+  border: 0;
+  font-size: 10px;
+  color: red;
+  font-weight: bolder;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.whole-plan {
+  width: 70%;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.myInput {
+  width: 70%;
+  height: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+textarea {
+  display: block;
+  border: 1px solid #ddd;
+  margin-top: 30px;
+  width: 70%;
+  height: 200px;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+}
+
+.selected {
+  background-color: #fad106;
+}
+
+.default {
+  background-color: #dcedf7;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+
+.field {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 14px;
+}
+
+@media all and (max-width: 1200px) {
+  body {
+    background: url(foodTwo.jpg);
+    height: 150vh;
+    background-size: contain;
   }
-  to {
-    transform: rotate(360deg);
+
+  .selected {
+    background-color: #fa942c;
   }
+  
+  .default {
+    background-color: #dedeb9;
+  }
+}
+
+@media all and (max-width: 800px) {
+  body {
+    background: url(foodTwo.jpg);
+    background-size: cover;
+    background-color: #a9c874;
+  }
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .whole-plan {
+    width:90%;
+  }
+  
+  .myInput {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  textarea {
+    margin-top: 10px;
+    width: 90%;
+    height: 150px;
+  }
+
+  .selected {
+    background-color: #fa942c;
+  }
+  
+  .default {
+    background-color: #dedeb9;
+  }
+
+.form {
+  color: #c50201;
+  font-weight: 900;
+  background-color: #dcedf7;
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 50px;
+}
 }
