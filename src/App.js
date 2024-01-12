@@ -5,7 +5,7 @@ import MyMealsAndIngredients from './MyMealsAndIngredients';
 import uuid from 'react-uuid';
 
 function App() {
-  const [mealPlans, setMealPlans] = useState([]);
+  const [mealPlans, setMealPlans] = useState(
       localStorage.mealPlans ? JSON.parse(localStorage.mealPlans) : []);
   const [selectedDay,setSelectedDay] = useState(false);
 
